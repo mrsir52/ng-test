@@ -3,9 +3,9 @@
       <h3>{{ crib.address }}</h3>
       <h3>{{ crib.price }}</h3>
   </div>
-  
-  
-  
+
+
+
 </div> -->
 
 
@@ -14,14 +14,14 @@
       <div *ngFor="let crib of cribs" class="col">
         <div class="card">
             <div class="card-body">
-              <h4 class="card-title">{{ crib.price }}</h4>
+              <h4 class="card-title">${{ crib.price }}</h4>
               <p class="card-text">{{ crib.address }}</p>
             </div>
         </div>
-       
+
 
       </div>
-  
+
     </div>
   </div>
 
@@ -43,7 +43,7 @@
                 <input type="text" formControlName="defaultFormEmail" id="defaultForm-email" class="form-control" mdbInputDirective>
                 <label for="defaultForm-email">Your email</label>
               </div>
-            
+
               <div class="md-form">
                 <i class="fa fa-lock prefix grey-text"></i>
                 <input type="password" formControlName="defaultFormPass" id="defaultForm-pass" class="form-control" mdbInputDirective>
@@ -58,4 +58,3 @@
     </div>
   </div>
 
-  
