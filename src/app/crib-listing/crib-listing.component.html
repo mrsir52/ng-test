@@ -10,17 +10,24 @@
 
 
 <div class="container">
+
+  <button (click)="getPosts()" )>Get Posts</button>
+  <div *ngFor="let post of posts |
+async">
+    {{ posts | json }}
+  </div>
     <div class="row">
-      <div *ngFor="let crib of cribs" class="col">
-        <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">${{ crib.price }}</h4>
-              <p class="card-text">{{ crib.address }}</p>
-            </div>
-        </div>
+      <!--<div *ngFor="let crib of cribs" class="col">-->
+      <!--<div>-->
+        <!--<div class="card">-->
+            <!--<div class="card-body">-->
+              <!--<h4 class="card-title">${{ crib.price }}</h4>-->
+              <!--<p class="card-text">{{ crib.address }}</p>-->
+            <!--</div>-->
+        <!--</div>-->
 
 
-      </div>
+      <!--</div>-->
 
     </div>
   </div>
